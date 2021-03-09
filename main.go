@@ -111,7 +111,7 @@ func main() {
 				field := []Field{
 					{
 						Title: "Actions URL",
-						Value: "<https://github.com/" + os.Getenv("GITHUB_REPOSITORY") + "/commit/" + os.Getenv("GITHUB_SHA") + "/checks|" + os.Getenv("GITHUB_WORKFLOW") + ">",
+						Value: "<https://github.com/" + os.Getenv("GITHUB_REPOSITORY") + "/actions/runs/" + os.Getenv("GITHUB_RUN_ID") + ">",
 						Short: false,
 					},
 				}
