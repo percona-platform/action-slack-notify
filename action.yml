@@ -2,8 +2,8 @@ name: 'Slack Notify'
 description: 'This action will send a notification to Slack'
 author: 'rtCamp'
 runs:
-  using: 'docker'
-  image: 'docker://ghcr.io/rtcamp/action-slack-notify:v2.1.1'
+  using: "node12"
+  main: "index.js"
 branding:
   icon: 'bell'
   color: 'yellow'
