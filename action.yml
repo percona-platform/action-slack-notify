@@ -2,8 +2,8 @@ name: 'Slack Notify'
 description: 'This action will send a notification to Slack'
 author: 'rtCamp'
 runs:
-  using: "node12"
-  main: "index.js"
+  using: 'node12'
+  main: 'index.js'
 branding:
   icon: 'bell'
   color: 'yellow'
