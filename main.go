@@ -87,7 +87,7 @@ func main() {
 				Short: false,
 			},
 		}
-		for _,requiredField := range requiredFields {
+		for _, requiredField := range requiredFields {
 			switch strings.ToLower(requiredField) {
 			case "ref":
 				field := []Field{
@@ -111,7 +111,7 @@ func main() {
 				field := []Field{
 					{
 						Title: "Actions URL",
-						Value: "<https://github.com/" + os.Getenv("GITHUB_REPOSITORY") + "/commit/" + os.Getenv("GITHUB_SHA") + "/checks|" + os.Getenv("GITHUB_WORKFLOW") + ">",
+						Value: "<https://github.com/" + os.Getenv("GITHUB_REPOSITORY") + "/actions/runs/" + os.Getenv("GITHUB_RUN_ID") + ">",
 						Short: false,
 					},
 				}
@@ -132,7 +132,7 @@ func main() {
 			},
 			{
 				Title: "Actions URL",
-				Value: "<https://github.com/" + os.Getenv("GITHUB_REPOSITORY") + "/commit/" + os.Getenv("GITHUB_SHA") + "/checks|" + os.Getenv("GITHUB_WORKFLOW") + ">",
+				Value: "<https://github.com/" + os.Getenv("GITHUB_REPOSITORY") + "/actions/runs/" + os.Getenv("GITHUB_RUN_ID") + ">",
 				Short: false,
 			},
 			{
